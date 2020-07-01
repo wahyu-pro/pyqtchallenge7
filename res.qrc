@@ -1,0 +1,9 @@
+<RCC>
+  <qresource prefix="icon">
+    <file>icon/speaker.png</file>
+    <file>icon/play-button.png</file>
+    <file>icon/start.png</file>
+    <file>icon/camera.png</file>
+    <file>icon/video.png</file>
+  </qresource>
+</RCC>
