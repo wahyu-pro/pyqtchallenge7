@@ -2,12 +2,15 @@ from PyQt5.QtWidgets import *
 from PyQt5.QtMultimedia import *
 from PyQt5.QtMultimediaWidgets import QCameraViewfinder
 from PyQt5 import uic
+from PyQt5.QtGui import QIcon
 import res, time, os
 
 class MyApp(QMainWindow):
     def __init__(self):
         super(MyApp, self).__init__()
         uic.loadUi("camera.ui", self)
+        self.setWindowTitle("Webcam App")
+        self.setWindowIcon(QIcon("icon/cameraApp.png"))
 
         self.status = QStatusBar()
         self.setStatusBar(self.status)
