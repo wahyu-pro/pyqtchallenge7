@@ -46,7 +46,7 @@ class MyApp(QMainWindow):
         self.volumeSlider.valueChanged.connect(self.player.setVolume)
 
     def openDialog(self):
-        self.dialog = QFileDialog.getOpenFileName(self, "open Video", "c:\\", 'files(*.mp4)')
+        self.dialog = QFileDialog.getOpenFileName(self, "open Video", "c:\\", 'files(*.mp4 *.mkv *.flv *.avi)')
         if self.dialog[0] != '':
             self.player.setMedia(QMediaContent(QUrl(self.dialog[0])))
             self.statusBar.showMessage(self.dialog[0])
